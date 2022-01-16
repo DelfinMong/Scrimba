@@ -10,8 +10,12 @@ function App() {
             <Link to='/'>Home</Link>
             <Link to='/about'>About</Link>
             <Switch>
-                <Route exact path="/"></Route>
-                <Route exact path="/"></Route>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route exact path="/about">
+                    <About />
+                </Route>
             </Switch>
         </div>
     )
