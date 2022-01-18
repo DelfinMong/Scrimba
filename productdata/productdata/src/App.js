@@ -1,22 +1,25 @@
 import React from "react"
-import { Switch, Route, Link } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import Profile from "./pages/profile/Profile"
+import Home from './pages/Home'
+import {Switch, Route} from "react-router-dom"
 
 function App() {    
     return (
         <div>
-            <h1>HELLO WORLD</h1>
-            <Link to='/'>Home</Link>
-            <Link to='/about'>About</Link>
+            <Header />
+            Hello
             <Switch>
                 <Route exact path="/">
                     <Home />
                 </Route>
-                <Route exact path="/about">
-                    <About />
+                <Route path="/profile">
+                    <Profile/>
                 </Route>
             </Switch>
+            
+            <Footer />
         </div>
     )
 }
