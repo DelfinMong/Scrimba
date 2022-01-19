@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import ServicesList from "./pages/services/ServicesList"
-// import ServiceDetail from "./pages/services/ServiceDetail"
+import ServiceDetail from "./pages/services/ServicesDetail"
 // import Profile from "./pages/profile/Profile"
 // import Setting from "../src/pages/profile/Settings"
 // import Info from "../src/pages/profile/Info"
@@ -21,6 +21,9 @@ function App() {
                 </Route>
                 <Route exact path='/services'>
                     <ServicesList />
+                </Route>
+                <Route path='/services/:serviceId'>
+                    <ServiceDetail />
                 </Route>
             </Switch>
 
