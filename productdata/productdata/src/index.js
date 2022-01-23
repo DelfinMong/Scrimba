@@ -6,11 +6,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './index.css';
 import App from './App';
+import App1 from './App1'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App/>
+    {/* <App/> */}
+    <App1/>
   </BrowserRouter>,
   document.getElementById('root')
 );
