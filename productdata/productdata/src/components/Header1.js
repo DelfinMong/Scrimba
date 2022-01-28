@@ -6,7 +6,7 @@ function Header1() {
         <header>
             <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/profile">Profile</Link></li>
+                <li><Link to="/user">Profile</Link></li>
             </ul>
         </header>
     )

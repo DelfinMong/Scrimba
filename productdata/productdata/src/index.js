@@ -11,8 +11,8 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
-    {/* <App/> */}
-    <App1/>
+    <App/>
+    {/* <App1/> */}
   </BrowserRouter>,
   document.getElementById('root')
 );

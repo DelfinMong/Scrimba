@@ -12,14 +12,14 @@ function Profile() {
             <h1>Profile Page</h1>
             <ul>
                 <li><Link to={`${url}/info`}>Profile Info</Link></li>
-                <li><Link to={`${url}/profile`}>Profile Settings</Link></li>
+                <li><Link to={`${url}/settings`}>Profile Settings</Link></li>
             </ul>
             <Switch>
                 <Route path={`${path}/info`}>
-                    <Info />
+                    <Info/>
                 </Route>
                 <Route path={`${path}/settings`}>
-                    <Settings />
+                    <Settings/>
                 </Route>
             </Switch>
         </div>
