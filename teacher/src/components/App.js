@@ -13,6 +13,7 @@ const App = () => (
       <Header />
       <Route exact path='/' component={Home} />
       <Route path='/about' component={About} />
+      {/* <Route path='/about' render = { () => <About title='About'/>} /> */}
       <Route path='/teachers' component={Teacher} />
       <Route path='/courses' component={Course} />
      </div>
@@ -21,3 +22,5 @@ const App = () => (
 );
 
 export default App;
+
+// render is use to pass down props.
