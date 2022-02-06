@@ -24,3 +24,4 @@ const App = () => (
 export default App;
 
 // render is use to pass down props.
+// NavLink as a defualt class of active.
