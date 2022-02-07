@@ -7,6 +7,7 @@ import Header from './Header'
 import Teacher from './Teachers'
 import Course from './Courses'
 
+
 const App = () => (
   <BrowserRouter>
      <div className="container">
@@ -24,5 +25,7 @@ const App = () => (
 export default App;
 
 // render is use to pass down props.
-// NavLink as a defualt class of active.
+// NavLink as a default class of active.
 // NavLink exact 
+// inline class ~ ~ activeClassName = 'activeActiveFace'
+// inlice style ~ ~ activeStyle = {{background: 'red'}}
