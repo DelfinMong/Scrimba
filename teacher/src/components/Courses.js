@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link,Route  } from 'react-router-dom'
+import { NavLink, Route, Redirect  } from 'react-router-dom'
 
 import HTML from './courses/HTML'
 import CSS from './courses/CSS'
@@ -10,14 +10,14 @@ const Courses = () => (
     <div className="course-header group">
       <h2>Courses</h2> 
       <ul className="course-nav">
-        <Link to='/courses/html'>HTML</Link>
-        <Link to='/courses/css'>CSS</Link>
-        <Link to='/courses/javascript'>JavaScript</Link>
+        <NavLink to='/courses/html'>HTML</NavLink>
+        <NavLink to='/courses/css'>CSS</NavLink>
+        <NavLink to='/courses/javascript'>JavaScript</NavLink>
       </ul>
-
-      <Route path='/' component={HTML} />
-      <Route path='/' component={CSS} />
-      <Route path='/' component={JavaScript} />
+      <Redirect to='/courses/html' />
+      <Route path='/courses/html' component={HTML} />
+      <Route path='/courses/css' component={CSS} />
+      <Route path='/courses/javascript' component={JavaScript} />
     </div>
     
     {/* Write routes here... */}
@@ -25,3 +25,6 @@ const Courses = () => (
 );
 
 export default Courses;
+
+// <Redirect to='/' /> requires a url to redirect to.
+// <Redirect to='/' /> will redirect to the home component.
