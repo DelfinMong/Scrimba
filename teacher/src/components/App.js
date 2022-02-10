@@ -7,6 +7,7 @@ import Header from './Header'
 import Teacher from './Teachers'
 import Course from './Courses'
 import NotFound from './NotFound';
+import Featured from './Featured';
 
 
 const App = () => (
@@ -17,7 +18,8 @@ const App = () => (
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           {/* <Route path='/about' render = { () => <About title='About'/>} /> */}
-          <Route path='/teachers' component={Teacher} />
+          <Route exact path='/teachers' component={Teacher} />
+          <Route path='/teachers' component={Featured} />
           <Route path='/courses' component={Course} />
           <Route component={NotFound} />
         </Switch>
